@@ -1,4 +1,4 @@
-package com.tikaydev.animatedtabs.presentation.home
+package com.tikaydev.animatedtabs.presentation.screen.home
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.Spring
@@ -23,23 +23,20 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 @Composable
-fun RecentsListShared(
+fun GroupsListShared(
     items: List<RecentMessage>,
     state: LazyListState,
     onChatSelected: (RecentMessage) -> Unit,
     shouldAnimate: Boolean
 ) {
     BoxWithConstraints {
-        val startOffset = -maxWidth
+        val startOffset = maxWidth
         LazyColumn(
             state = state,
             contentPadding = PaddingValues(top = 16.dp, bottom = 120.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             itemsIndexed(items) { index, item ->
-                // Animation Logic:
-                // If shouldAnimate is true, we initialize at 0f/offset and animate to 1f/0.
-                // If false, we initialize directly at 1f/0 (Static).
                 val alphaAnim = remember { Animatable(if (shouldAnimate) 0f else 1f) }
                 val slideAnim =
                     remember { Animatable(if (shouldAnimate) startOffset.value else 0f) }

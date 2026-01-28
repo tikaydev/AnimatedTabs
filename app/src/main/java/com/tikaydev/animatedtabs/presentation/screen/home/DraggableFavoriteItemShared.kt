@@ -1,4 +1,4 @@
-package com.tikaydev.animatedtabs.presentation.home
+package com.tikaydev.animatedtabs.presentation.screen.home
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.Spring

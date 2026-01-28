@@ -1,4 +1,4 @@
-package com.tikaydev.animatedtabs.presentation
+package com.tikaydev.animatedtabs.presentation.screen.detail
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.ExperimentalSharedTransitionApi
