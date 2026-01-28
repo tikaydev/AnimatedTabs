@@ -1,3 +1,7 @@
+/*
+ * Copyright 2026 Alex Tenkorang
+ */
+
 package com.tikaydev.animatedtabs.presentation.component
 
 import androidx.compose.animation.core.Animatable

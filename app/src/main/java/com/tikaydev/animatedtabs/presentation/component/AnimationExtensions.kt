@@ -1,3 +1,7 @@
+/*
+ * Copyright 2026 Alex Tenkorang
+ */
+
 package com.tikaydev.animatedtabs.presentation.component
 
 import androidx.compose.animation.AnimatedVisibilityScope
@@ -68,4 +72,3 @@ val LocalSharedTransitionScope = compositionLocalOf<SharedTransitionScope?> { nu
  * Provides the [AnimatedVisibilityScope] to children, required for Shared Element transitions.
  */
 val LocalAnimatedVisibilityScope = compositionLocalOf<AnimatedVisibilityScope?> { null }
-

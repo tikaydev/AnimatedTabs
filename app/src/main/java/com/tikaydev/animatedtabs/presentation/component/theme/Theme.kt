@@ -1,3 +1,7 @@
+/*
+ * Copyright 2026 Alex Tenkorang
+ */
+
 package com.tikaydev.animatedtabs.presentation.component.theme
 
 import android.os.Build

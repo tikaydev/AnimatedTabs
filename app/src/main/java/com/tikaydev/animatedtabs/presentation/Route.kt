@@ -1,3 +1,7 @@
+/*
+ * Copyright 2026 Alex Tenkorang
+ */
+
 package com.tikaydev.animatedtabs.presentation
 
 import com.tikaydev.animatedtabs.domain.model.RecentMessage
